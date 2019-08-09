@@ -1,0 +1,250 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    min-height: 100%;
+    overflow: auto;
+}
+
+body {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 200;
+    position: relative;
+    font-size: 1.6rem;
+    background-color: red;
+}
+
+
+
+nav {
+    font-size: 2.3rem;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 6.5rem;
+    background-color: rgb(139, 8, 8);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+nav>ul {
+    position: relative;
+    right: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end ;
+    align-items: center;
+    list-style-type: none;
+    width: 40%;
+    height: 100%;
+    padding: 0;
+    margin:0;
+    /* background-color: black; */
+ }
+
+ nav>ul>li {
+     color: white;
+    padding: 0 2.5rem 0 2.5rem;
+ }
+
+ nav a {
+     color: white;
+     text-decoration: none;
+ }
+
+#welcome-section {
+    position: relative;
+    margin-top: 5rem;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+}
+
+#welcome-section> div {
+    width: 50%;
+    height: 25rem;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: perspective(1px) translateY(-50%);
+}
+
+#welcome-section h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    width: 100%;
+}
+
+#welcome-section p {
+    margin: 0;
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    width: 100%;
+}
+
+#welcome-section span {
+    font-size: 3rem;
+    color: rgb(139, 8, 8);
+}
+
+#projects {
+    width: 100%;
+    background-color: rgb(72, 72, 163);
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: 35rem;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.project-tile {
+    height: 40rem ;
+    position: relative;
+    border: 0.1rem solid rgb(72, 72, 163);
+    border-radius: 10px;
+    background-color: black;
+}
+
+#projects-container {
+    margin-top: 10rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));;
+    grid-column-gap: 5rem;
+    grid-row-gap: 5rem;
+}
+
+.title-div {
+    font-size: 1.8rem;
+    padding-top: 1rem;
+    text-align: center;
+    height: 5rem;
+}
+
+#projects a {
+    text-decoration: none;
+    color: white;
+}
+
+#projects h2 {
+    color: white;
+    margin: 0;
+    padding-top: 6rem;
+    font-size: 3.5rem;
+}
+
+#projects #filler {
+    width: 100%;
+    height: 20rem;
+}
+
+#contact {
+    width: 100%;
+    height: 80vh;
+    background-color: black;
+    text-align: center;
+}
+
+
+
+#contact-div {
+    font-size: 3rem;
+    color: white;
+    position: relative;
+    top: 12rem;
+} 
+
+#icons-div {
+    position: relative;;
+    top: 14rem;
+    font-size: 3rem;
+}
+
+
+.contact-details {
+    padding: 0 1rem 0 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+
+#contact h2, p  { 
+    margin: 0;
+}
+
+footer {
+    font-size: 1.8rem;
+    margin-top: 10px;
+    width: 100%;
+    height: 10vh;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem 0 3rem;
+}
+
+@media (max-width: 599px) {
+       html {
+           font-size: 50%;
+       }
+
+       nav>ul {
+        position: relative;
+        right: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+       }
+
+       #projects-container {
+        margin-top: 10rem;
+        padding: 0;
+       }
+
+       #icons-div {
+        position: relative;;
+        top: 14rem;
+        font-size: 3rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-details {
+        padding: 1rem 0 1rem 0;
+        text-decoration: none;
+        color: white;
+    }
+
+    footer {
+        height: 12vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer> p, span {
+        padding-top: 1rem;
+    }
+
+
+}
